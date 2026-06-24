@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>02 · Marktgleichgewicht ermitteln — BGWP Preisbildung</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="mark">BGWP</span><b>Preisbildung</b></a>
+  <nav class="topnav">
+    <a href="01-vollkommener-markt.html">01 Vollk. Markt</a>
+    <a href="02-marktgleichgewicht-ermitteln.html" class="current">02 Gleichgewicht</a>
+    <a href="03-verschiebung-angebot-nachfrage.html">03 Verschiebung</a>
+    <a href="lernseite.html">Lernen</a>
+  </nav>
+  <div class="spacer"></div>
+  <span class="scorechip" id="scorechip">Auto-Fragen: 0/0 richtig</span>
+</header>
+<main><div class="wrap">
+
+  <section class="hero">
+    <p class="eyebrow">Thema 11 · Preisbildung</p>
+    <div class="hero-num"><span class="hash">#</span>02</div>
+    <h1>Marktgleichgewicht ermitteln</h1>
+    <p class="lede">Der Schnittpunkt von Angebot und Nachfrage liefert Gleichgewichtspreis und
+      ‑menge. Drei Wege führen dahin: Tabelle ablesen, grafisch zeichnen, mathematisch berechnen.</p>
+    <div class="hero-meta">
+      <span class="pill"><b>14</b> Aufgaben</span>
+      <span class="pill"><b>2</b> Diagramme</span>
+      <span class="pill">MC · Multi-Select · Rechnen · Szenario</span>
+    </div>
+  </section>
+
+  <div class="controls">
+    <button class="btn primary" id="show-all">Alle Lösungen einblenden</button>
+    <button class="btn" id="hide-all">Alle ausblenden</button>
+  </div>
+
+  <!-- ================= ABSCHNITT A ================= -->
+  <div class="sec-head"><span class="ix">A</span><h2>Das Marktgleichgewicht</h2></div>
+  <p class="sec-sub">Schnittpunkt, Gleichgewichtspreis und ‑menge — und was bei „falschen" Preisen passiert.</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 480 300" role="img" aria-label="Preis-Mengen-Diagramm: steigende Angebots- und fallende Nachfragekurve schneiden sich im Marktgleichgewicht; gestrichelte Linien zeigen Gleichgewichtspreis p-Stern und Gleichgewichtsmenge x-Stern">
+      <line x1="60" y1="20" x2="60" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <line x1="60" y1="255" x2="455" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <polygon points="60,14 56,24 64,24" fill="#16242E"/>
+      <polygon points="461,255 451,251 451,259" fill="#16242E"/>
+      <text class="svg-label" x="30" y="30">Preis</text>
+      <text class="svg-label" x="410" y="275">Menge</text>
+      <line x1="70" y1="70" x2="430" y2="230" stroke="#15786E" stroke-width="2.6"/>
+      <line x1="70" y1="250" x2="430" y2="70" stroke="#DD5430" stroke-width="2.6"/>
+      <text class="svg-label" x="350" y="222" fill="#15786E">Nachfrage</text>
+      <text class="svg-label" x="350" y="92" fill="#DD5430">Angebot</text>
+      <line x1="261" y1="155" x2="261" y2="255" stroke="#B9C7D2" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <line x1="60" y1="155" x2="261" y2="155" stroke="#B9C7D2" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <circle cx="261" cy="155" r="5" fill="#16242E"/>
+      <text class="svg-label-sm" x="36" y="151">p*</text>
+      <text class="svg-label-sm" x="252" y="271">x*</text>
+      <text class="svg-label-sm" x="270" y="150">Gleichgewicht</text>
+    </svg>
+    <figcaption>Marktgleichgewicht: Schnittpunkt → Gleichgewichtspreis p* (y) und ‑menge x* (x).</figcaption>
+  </figure>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">01</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Wo liegt im Preis-Mengen-Diagramm das <strong>Marktgleichgewicht</strong>?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Dort, wo die Angebotskurve die x-Achse schneidet.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Im <code>Schnittpunkt</code> von Angebots- und Nachfragekurve.</li>
+        <li class="opt"><span class="tick"></span>Im höchsten Punkt der Nachfragekurve.</li>
+        <li class="opt"><span class="tick"></span>Dort, wo beide Kurven die y-Achse berühren.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Im Schnittpunkt sind Angebot und Nachfrage gleich groß — hier wird auch die meiste Ware verkauft.
+        Dieser Punkt heißt Marktgleichgewicht.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">02</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Welche Koordinate des Schnittpunkts gibt die <strong>Gleichgewichtsmenge</strong> an?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span>Die <code>x</code>-Koordinate (Menge-Achse).</li>
+        <li class="opt"><span class="tick"></span>Die <code>y</code>-Koordinate (Preis-Achse).</li>
+        <li class="opt"><span class="tick"></span>Die Steigung der Angebotskurve.</li>
+        <li class="opt"><span class="tick"></span>Der Achsenabschnitt der Nachfragekurve.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>x-Koordinate = <b>Gleichgewichtsmenge</b>, y-Koordinate = <b>Gleichgewichtspreis</b>.
+        <span class="tag-mistake">Verwechslung</span> Preis steht auf der senkrechten Achse, Menge auf der waagrechten.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">03</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Was beschreibt der <strong>Gleichgewichtspreis</strong>?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Den höchsten Preis, den ein Anbieter verlangen darf.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Den Preis, bei dem <code>Angebot = Nachfrage</code> ist.</li>
+        <li class="opt"><span class="tick"></span>Den Durchschnitt aus höchstem und niedrigstem Marktpreis.</li>
+        <li class="opt"><span class="tick"></span>Den vom Staat festgelegten Mindestpreis.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Der Gleichgewichtspreis ist genau der Preis, bei dem angebotene und nachgefragte Menge übereinstimmen.</p>
+    </div>
+  </article>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 480 300" role="img" aria-label="Diagramm mit Angebots- und Nachfragekurve sowie zwei waagrechten Preislinien: oberhalb des Gleichgewichts entsteht ein Angebotsüberhang, unterhalb ein Nachfrageüberhang">
+      <line x1="60" y1="20" x2="60" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <line x1="60" y1="255" x2="455" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <polygon points="60,14 56,24 64,24" fill="#16242E"/>
+      <polygon points="461,255 451,251 451,259" fill="#16242E"/>
+      <text class="svg-label" x="30" y="30">Preis</text>
+      <text class="svg-label" x="410" y="275">Menge</text>
+      <line x1="70" y1="70" x2="430" y2="230" stroke="#15786E" stroke-width="2.6"/>
+      <line x1="70" y1="250" x2="430" y2="70" stroke="#DD5430" stroke-width="2.6"/>
+      <circle cx="261" cy="155" r="4.5" fill="#16242E"/>
+      <!-- hoher Preis -> Angebotsüberhang -->
+      <line x1="160" y1="110" x2="350" y2="110" stroke="#DD5430" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <text class="svg-label-sm" x="200" y="103" fill="#B23E1F">Angebotsüberhang →  Preis sinkt</text>
+      <text class="svg-label-sm" x="30" y="114">p&#8593;</text>
+      <!-- niedriger Preis -> Nachfrageüberhang -->
+      <line x1="170" y1="200" x2="362" y2="200" stroke="#15786E" stroke-width="1.6" stroke-dasharray="5 3"/>
+      <text class="svg-label-sm" x="190" y="216" fill="#15786E">Nachfrageüberhang →  Preis steigt</text>
+      <text class="svg-label-sm" x="30" y="204">p&#8595;</text>
+    </svg>
+    <figcaption>Über dem Gleichgewicht: Angebot &gt; Nachfrage (Angebotsüberhang). Darunter: Nachfrage &gt; Angebot (Nachfrageüberhang).</figcaption>
+  </figure>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">04</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Der Marktpreis liegt <strong>über</strong> dem Gleichgewichtspreis. Was passiert?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span>Es entsteht ein <code>Angebotsüberhang</code> → der Preis sinkt.</li>
+        <li class="opt"><span class="tick"></span>Es entsteht ein Nachfrageüberhang → der Preis steigt.</li>
+        <li class="opt"><span class="tick"></span>Angebot und Nachfrage sind sofort gleich.</li>
+        <li class="opt"><span class="tick"></span>Der Markt bricht zusammen.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Bei zu hohem Preis bieten Verkäufer viel an, Käufer fragen wenig nach → <b>Angebotsüberhang</b>
+        (Angebot &gt; Nachfrage). Um die Ware loszuwerden, sinkt der Preis Richtung Gleichgewicht.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">05</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Bei einem <strong>Nachfrageüberhang</strong> gilt …</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Angebot &gt; Nachfrage, der Preis sinkt.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Nachfrage &gt; Angebot, der Preis <code>steigt</code>.</li>
+        <li class="opt"><span class="tick"></span>Angebot = Nachfrage, der Preis bleibt gleich.</li>
+        <li class="opt"><span class="tick"></span>Die Menge ist null.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Nachfrageüberhang = Nachfrage übersteigt Angebot (Preis zu niedrig). Die Knappheit treibt den Preis nach oben,
+        bis das Gleichgewicht erreicht ist.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">06</span><span class="q-type">Multi-Select</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Welche Aussagen über das Marktgleichgewicht sind <strong>richtig</strong>? (Mehrfachauswahl)</p>
+      <ul class="q-options" data-multi="true">
+        <li class="opt" data-correct="true"><span class="tick"></span>Im Gleichgewicht wird die größte Menge gehandelt.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Angebots- und Nachfragemenge sind dort gleich groß.</li>
+        <li class="opt"><span class="tick"></span>Der Gleichgewichtspreis ist immer der höchste mögliche Preis.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Liegt der Preis darunter, entsteht ein Nachfrageüberhang.</li>
+        <li class="opt"><span class="tick"></span>Im Gleichgewicht gibt es immer einen Angebotsüberhang.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-check btn">Auswerten</button><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Richtig: größte gehandelte Menge · Angebot = Nachfrage · Preis darunter → Nachfrageüberhang.
+        Falsch: das Gleichgewicht ist gerade <i>kein</i> Höchstpreis, und im Gleichgewicht gibt es <i>keinen</i> Überhang.</p>
+    </div>
+  </article>
+
+  <!-- ================= ABSCHNITT B ================= -->
+  <div class="sec-head"><span class="ix">B</span><h2>Gleichgewicht aus der Tabelle ablesen</h2></div>
+  <p class="sec-sub">Das Gleichgewicht liegt dort, wo angebotene und nachgefragte Menge gleich groß sind.</p>
+
+  <div class="tbl-wrap">
+  <table class="ref">
+    <tr><th>Preis (€)</th><th>Angebot / Tag</th><th>Nachfrage / Tag</th><th>Verhältnis</th></tr>
+    <tr><td>0,75</td><td>75</td><td>175</td><td>Nachfrageüberhang</td></tr>
+    <tr><td>1,00</td><td>100</td><td>150</td><td>Nachfrageüberhang</td></tr>
+    <tr><td><b>1,25</b></td><td><b>125</b></td><td><b>125</b></td><td><b>Gleichgewicht</b></td></tr>
+    <tr><td>1,50</td><td>150</td><td>100</td><td>Angebotsüberhang</td></tr>
+    <tr><td>1,75</td><td>175</td><td>75</td><td>Angebotsüberhang</td></tr>
+  </table>
+  </div>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">07</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Bestimmen Sie aus der Tabelle <strong>Gleichgewichtspreis und ‑menge</strong>.</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Preis 1,00 € · Menge 150</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Preis 1,25 € · Menge 125</li>
+        <li class="opt"><span class="tick"></span>Preis 1,50 € · Menge 150</li>
+        <li class="opt"><span class="tick"></span>Preis 1,75 € · Menge 175</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Nur bei <b>1,25 €</b> sind Angebot (125) und Nachfrage (125) gleich → Gleichgewichtspreis 1,25 €,
+        Gleichgewichtsmenge 125 Stück/Tag.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">08</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Welche Marktlage herrscht laut Tabelle beim Preis <strong>1,00 €</strong>?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span>Nachfrageüberhang (150 &gt; 100) → der Preis tendiert nach oben.</li>
+        <li class="opt"><span class="tick"></span>Angebotsüberhang (100 &gt; 150) → der Preis tendiert nach unten.</li>
+        <li class="opt"><span class="tick"></span>Gleichgewicht, weil der Preis rund ist.</li>
+        <li class="opt"><span class="tick"></span>Keine Aussage möglich.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Bei 1,00 € werden 150 nachgefragt, aber nur 100 angeboten → Nachfrage &gt; Angebot = <b>Nachfrageüberhang</b>.
+        Die Knappheit lässt den Preis Richtung 1,25 € steigen.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">09</span><span class="q-type">Rechnen</span><span class="q-pts">manuell</span></div>
+    <div class="q-body">
+      <p class="q-text">Eismarkt — bestimmen Sie den Gleichgewichtsbereich aus den beiden Tabellen.</p>
+      <div class="tbl-wrap">
+      <table class="ref">
+        <tr><th>Preis je Kugel (€)</th><td>0,50</td><td>0,75</td><td>1,00</td><td>1,25</td><td>1,50</td><td>1,75</td></tr>
+        <tr><th>Nachfrage / Tag</th><td>500</td><td>400</td><td>300</td><td>200</td><td>100</td><td>0</td></tr>
+        <tr><th>Angebot / Tag</th><td>0</td><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td></tr>
+      </table>
+      </div>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
+      <p>Man sucht den Preis, bei dem Angebot ≈ Nachfrage:</p>
+      <div class="step">Preis 1,00 €:  Nachfrage 300 &gt; Angebot 200  →  Nachfrageüberhang
+Preis 1,25 €:  Nachfrage 200 &lt; Angebot 300  →  Angebotsüberhang</div>
+      <p>Der Gleichgewichtspreis liegt also <b>zwischen 1,00 € und 1,25 €</b>, die Gleichgewichtsmenge bei
+        <b>ca. 250 Kugeln/Tag</b>. (Genau berechnet: 1,125 € / 250 Kugeln — siehe Aufgabe 13.)</p>
+    </div>
+  </article>
+
+  <!-- ================= ABSCHNITT C ================= -->
+  <div class="sec-head"><span class="ix">C</span><h2>Grafisch &amp; mathematisch ermitteln</h2></div>
+  <p class="sec-sub">Drei Wege zum Gleichgewicht: Tabelle (Abschnitt B), Zeichnung und exakte Rechnung über
+    die Geradengleichung <code>y = m·x + t</code>.</p>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">10</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Wie ermittelt man das Gleichgewicht <strong>grafisch</strong>?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span>Beide Kurven in ein Koordinatensystem (y = Preis, x = Menge) zeichnen und vom Schnittpunkt Parallelen zu den Achsen ziehen.</li>
+        <li class="opt"><span class="tick"></span>Nur die Angebotskurve zeichnen und ihren höchsten Punkt ablesen.</li>
+        <li class="opt"><span class="tick"></span>Die Differenz der beiden Achsenabschnitte halbieren.</li>
+        <li class="opt"><span class="tick"></span>Die Nachfragemenge mit dem Preis multiplizieren.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Angebots- und Nachfragepunkte eintragen, jeweils verbinden, und vom Schnittpunkt Parallelen zur x- und
+        y-Achse ziehen → so liest man Gleichgewichtsmenge und ‑preis ab.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">11</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Wie lautet die allgemeine <strong>Geradengleichung</strong> einer linearen Funktion?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span><code>y = x² + t</code></li>
+        <li class="opt" data-correct="true"><span class="tick"></span><code>y = m · x + t</code></li>
+        <li class="opt"><span class="tick"></span><code>y = m / x</code></li>
+        <li class="opt"><span class="tick"></span><code>y = m + x · t</code></li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p><code>y = m·x + t</code> mit <code>m</code> = Steigung und <code>t</code> = y-Achsenabschnitt.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">12</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Wie berechnet man die <strong>Steigung m</strong> aus zwei Punkten?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span><code>m = (y&#8321; − y&#8322;) / (x&#8321; − x&#8322;)</code></li>
+        <li class="opt"><span class="tick"></span><code>m = (x&#8321; − x&#8322;) / (y&#8321; − y&#8322;)</code></li>
+        <li class="opt"><span class="tick"></span><code>m = y&#8321; · x&#8321;</code></li>
+        <li class="opt"><span class="tick"></span><code>m = (y&#8321; + y&#8322;) / 2</code></li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Die Steigung ist die Änderung von y geteilt durch die Änderung von x:
+        <code>m = (y&#8321;−y&#8322;)/(x&#8321;−x&#8322;)</code>. <span class="tag-mistake">Verwechslung</span> Nicht x und y im Bruch vertauschen.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">13</span><span class="q-type">Rechnen</span><span class="q-pts">manuell</span></div>
+    <div class="q-body">
+      <p class="q-text">Berechnen Sie das Gleichgewicht <strong>mathematisch</strong> (Eismarkt). Gegeben — x = Menge, y = Preis:</p>
+      <ul>
+        <li>Nachfrage: bei 500 Kugeln 0,50 €; bei 0 Kugeln 1,75 €</li>
+        <li>Angebot: bei 0 Kugeln 0,50 €; bei 500 Kugeln 1,75 €</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
+      <p><b>1. Nachfragegerade</b> — Punkte (500 | 0,50) und (0 | 1,75):</p>
+      <div class="step">m = (0,50 − 1,75) / (500 − 0) = −1,25 / 500 = −0,0025
+t = 1,75   (bei x = 0)
+→  y = −0,0025·x + 1,75</div>
+      <p><b>2. Angebotsgerade</b> — Punkte (0 | 0,50) und (500 | 1,75):</p>
+      <div class="step">m = (1,75 − 0,50) / (500 − 0) = 1,25 / 500 = 0,0025
+t = 0,50   (bei x = 0)
+→  y = 0,0025·x + 0,50</div>
+      <p><b>3. Gleichsetzen</b> (Angebot = Nachfrage):</p>
+      <div class="step">−0,0025·x + 1,75 = 0,0025·x + 0,50
+1,75 − 0,50 = 0,0025·x + 0,0025·x
+1,25 = 0,005·x   →   x = 250</div>
+      <p><b>4. Preis einsetzen:</b></p>
+      <div class="step">y = 0,0025·250 + 0,50 = 0,625 + 0,50 = 1,125</div>
+      <p><b>Ergebnis:</b> Gleichgewichtsmenge <b>250 Kugeln/Tag</b>, Gleichgewichtspreis <b>1,125 €</b> —
+        passt zum Tabellen-Bereich „zwischen 1,00 € und 1,25 €".</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">14</span><span class="q-type">Szenario</span><span class="q-pts">manuell</span></div>
+    <div class="q-body">
+      <p class="q-text">Nennen und beschreiben Sie die <strong>drei Wege</strong>, ein Marktgleichgewicht zu ermitteln,
+        und ihre jeweilige Genauigkeit.</p>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
+      <ol>
+        <li><b>Tabelle:</b> Den Preis suchen, bei dem Angebot und Nachfrage (ungefähr) gleich sind. Schnell, aber
+          nur so genau wie die Tabellenschritte (oft nur ein Bereich).</li>
+        <li><b>Grafisch:</b> Beide Kurven zeichnen, Schnittpunkt ablesen. Anschaulich, aber Ablesefehler möglich.</li>
+        <li><b>Mathematisch:</b> Geradengleichungen <code>y = m·x + t</code> aufstellen und gleichsetzen. Exaktes
+          Ergebnis, aber rechnerisch aufwendiger.</li>
+      </ol>
+    </div>
+  </article>
+
+  <nav class="pager">
+    <a href="01-vollkommener-markt.html"><span>Vorheriges Thema</span><b>← 01 · Der vollkommene Markt</b></a>
+    <a class="next" href="03-verschiebung-angebot-nachfrage.html"><span>Nächstes Thema</span><b>03 · Verschiebung von Angebot &amp; Nachfrage →</b></a>
+  </nav>
+
+</div></main>
+<footer class="foot"><div class="wrap"><span class="mono">BGWP · Thema 11 — Marktgleichgewicht ermitteln</span> · Kerninhalt</div></footer>
+<script src="assets/quiz.js"></script>
+</body>
+</html>

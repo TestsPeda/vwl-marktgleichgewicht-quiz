@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>03 · Verschiebung von Angebot &amp; Nachfrage — BGWP Preisbildung</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="mark">BGWP</span><b>Preisbildung</b></a>
+  <nav class="topnav">
+    <a href="01-vollkommener-markt.html">01 Vollk. Markt</a>
+    <a href="02-marktgleichgewicht-ermitteln.html">02 Gleichgewicht</a>
+    <a href="03-verschiebung-angebot-nachfrage.html" class="current">03 Verschiebung</a>
+    <a href="lernseite.html">Lernen</a>
+  </nav>
+  <div class="spacer"></div>
+  <span class="scorechip" id="scorechip">Auto-Fragen: 0/0 richtig</span>
+</header>
+<main><div class="wrap">
+
+  <section class="hero">
+    <p class="eyebrow">Thema 11 · Preisbildung</p>
+    <div class="hero-num"><span class="hash">#</span>03</div>
+    <h1>Verschiebung von Angebot &amp; Nachfrage</h1>
+    <p class="lede">Märkte bleiben nicht stehen: Mehr Anbieter, neue Präferenzen, Ersatzgüter oder
+      staatliche Preisgrenzen verschieben die Kurven — und damit Gleichgewichtspreis und ‑menge.</p>
+    <div class="hero-meta">
+      <span class="pill"><b>14</b> Aufgaben</span>
+      <span class="pill"><b>4</b> Diagramme</span>
+      <span class="pill">MC · Multi-Select · Zuordnung · Szenario</span>
+    </div>
+  </section>
+
+  <div class="controls">
+    <button class="btn primary" id="show-all">Alle Lösungen einblenden</button>
+    <button class="btn" id="hide-all">Alle ausblenden</button>
+  </div>
+
+  <!-- ================= ABSCHNITT A ================= -->
+  <div class="sec-head"><span class="ix">A</span><h2>Welche Kurve verschiebt sich — und wohin?</h2></div>
+  <p class="sec-sub">Grundregel: Mehr/weniger <b>Anbieter</b> bewegen die Angebotskurve, mehr/weniger
+    <b>Nachfrager</b> oder veränderte <b>Präferenzen</b> die Nachfragekurve. Rechts = mehr, links = weniger.</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 480 300" role="img" aria-label="Angebotskurve verschiebt sich nach rechts: das neue Gleichgewicht liegt bei niedrigerem Preis und höherer Menge">
+      <line x1="60" y1="20" x2="60" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <line x1="60" y1="255" x2="455" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <polygon points="60,14 56,24 64,24" fill="#16242E"/>
+      <polygon points="461,255 451,251 451,259" fill="#16242E"/>
+      <text class="svg-label" x="30" y="30">Preis</text>
+      <text class="svg-label" x="410" y="275">Menge</text>
+      <line x1="70" y1="70" x2="430" y2="230" stroke="#15786E" stroke-width="2.4"/>
+      <text class="svg-label" x="350" y="222" fill="#15786E">Nachfrage</text>
+      <line x1="70" y1="250" x2="430" y2="70" stroke="#DD5430" stroke-width="2.4"/>
+      <line x1="140" y1="250" x2="430" y2="105" stroke="#DD5430" stroke-width="2.4" stroke-dasharray="6 4"/>
+      <text class="svg-label" x="80" y="120" fill="#DD5430">S</text>
+      <text class="svg-label" x="150" y="150" fill="#B23E1F">S&#8242;</text>
+      <line x1="120" y1="95" x2="170" y2="95" stroke="#DD5430" stroke-width="1.4"/>
+      <polygon points="176,95 166,91 166,99" fill="#DD5430"/>
+      <circle cx="261" cy="155" r="4.5" fill="#16242E"/>
+      <circle cx="298" cy="171" r="4.5" fill="#B23E1F"/>
+      <text class="svg-label-sm" x="300" y="186" fill="#B23E1F">neu</text>
+      <text class="svg-label-sm" x="200" y="146">alt</text>
+    </svg>
+    <figcaption>Mehr Angebot → Angebotskurve nach rechts → Preis ↓, Menge ↑.</figcaption>
+  </figure>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 480 300" role="img" aria-label="Nachfragekurve verschiebt sich nach links: das neue Gleichgewicht liegt bei niedrigerem Preis und niedrigerer Menge">
+      <line x1="60" y1="20" x2="60" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <line x1="60" y1="255" x2="455" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <polygon points="60,14 56,24 64,24" fill="#16242E"/>
+      <polygon points="461,255 451,251 451,259" fill="#16242E"/>
+      <text class="svg-label" x="30" y="30">Preis</text>
+      <text class="svg-label" x="410" y="275">Menge</text>
+      <line x1="70" y1="250" x2="430" y2="70" stroke="#DD5430" stroke-width="2.4"/>
+      <text class="svg-label" x="350" y="92" fill="#DD5430">Angebot</text>
+      <line x1="70" y1="70" x2="430" y2="230" stroke="#15786E" stroke-width="2.4"/>
+      <line x1="70" y1="140" x2="317" y2="250" stroke="#15786E" stroke-width="2.4" stroke-dasharray="6 4"/>
+      <text class="svg-label" x="360" y="222" fill="#15786E">D</text>
+      <text class="svg-label" x="250" y="245" fill="#0d5a52">D&#8242;</text>
+      <line x1="250" y1="120" x2="200" y2="120" stroke="#15786E" stroke-width="1.4"/>
+      <polygon points="194,120 204,116 204,124" fill="#15786E"/>
+      <circle cx="261" cy="155" r="4.5" fill="#16242E"/>
+      <circle cx="187" cy="192" r="4.5" fill="#0d5a52"/>
+      <text class="svg-label-sm" x="150" y="188" fill="#0d5a52">neu</text>
+      <text class="svg-label-sm" x="270" y="150">alt</text>
+    </svg>
+    <figcaption>Weniger Nachfrage → Nachfragekurve nach links → Preis ↓, Menge ↓.</figcaption>
+  </figure>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">01</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Es treten <strong>mehr Anbieter</strong> auf den Markt. Welche Kurve verschiebt sich wohin?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span>Die <code>Angebotskurve</code> verschiebt sich nach <b>rechts</b> (außen).</li>
+        <li class="opt"><span class="tick"></span>Die Angebotskurve verschiebt sich nach links.</li>
+        <li class="opt"><span class="tick"></span>Die Nachfragekurve verschiebt sich nach rechts.</li>
+        <li class="opt"><span class="tick"></span>Keine Kurve bewegt sich, nur der Preis steigt.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Mehr Anbieter = mehr Gesamtangebot → die Angebotskurve verschiebt sich nach rechts/außen.
+        Die Nachfrage bleibt zunächst unverändert.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">02</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Was verschiebt grundsätzlich die <strong>Nachfragekurve</strong>?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Eine Änderung der Produktionskosten der Anbieter.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Eine Änderung der Zahl der Nachfrager oder ihrer <code>Präferenzen</code>.</li>
+        <li class="opt"><span class="tick"></span>Der Eintritt zusätzlicher Anbieter.</li>
+        <li class="opt"><span class="tick"></span>Eine höhere Lagerkapazität der Verkäufer.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Mehr/weniger Nachfrager (z. B. durch Zuwanderung) oder veränderte Präferenzen (z. B. ein Produkt wird
+        attraktiver/unattraktiver) verschieben die Nachfragekurve. Anbieterseitige Faktoren wirken dagegen aufs Angebot.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">03</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Ein günstiges <strong>Substitutionsgut (Ersatzgut)</strong> kommt auf den Markt. Was passiert mit der
+        Nachfrage nach dem ursprünglichen Produkt?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Die Nachfragekurve verschiebt sich nach rechts.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Die Nachfragekurve verschiebt sich nach <b>links</b> — ein Teil der Kunden weicht aus.</li>
+        <li class="opt"><span class="tick"></span>Die Angebotskurve verschiebt sich nach rechts.</li>
+        <li class="opt"><span class="tick"></span>Nichts, Ersatzgüter haben keinen Einfluss.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Ein Ersatzgut zieht Nachfrage ab → die Nachfrage nach dem Ursprungsgut sinkt, die Nachfragekurve
+        verschiebt sich nach links (z. B. neue Spielekonsole statt Gaming-PC).</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">04</span><span class="q-type">Multi-Select</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Welche Ereignisse verschieben die <strong>Nachfragekurve</strong> (nicht das Angebot)? (Mehrfachauswahl)</p>
+      <ul class="q-options" data-multi="true">
+        <li class="opt" data-correct="true"><span class="tick"></span>Zuwanderung erhöht die Zahl der Nachfrager nach Brot.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Discounterfleisch wird durch Image-Wandel unattraktiver.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Ein günstiges Ersatzgut erscheint am Markt.</li>
+        <li class="opt"><span class="tick"></span>Viele neue Billiganbieter drängen auf den Markt.</li>
+        <li class="opt"><span class="tick"></span>Die Produktionskosten der Hersteller sinken stark.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-check btn">Auswerten</button><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Nachfrageseitig: Zuwanderung (mehr Nachfrager), Präferenzänderung, Ersatzgut. Die beiden letzten
+        Optionen (neue Anbieter, geänderte Produktionskosten) verschieben dagegen das <b>Angebot</b>.</p>
+    </div>
+  </article>
+
+  <!-- ================= ABSCHNITT B ================= -->
+  <div class="sec-head"><span class="ix">B</span><h2>Folgen für Preis und Menge</h2></div>
+  <p class="sec-sub">Der neue Schnittpunkt bestimmt das neue Gleichgewicht. Vier Grundfälle — einprägen!</p>
+
+  <div class="tbl-wrap">
+  <table class="ref">
+    <tr><th>Verschiebung</th><th>Gleichgewichtspreis</th><th>Gleichgewichtsmenge</th></tr>
+    <tr><td>Angebot steigt (S nach rechts)</td><td>sinkt ↓</td><td>steigt ↑</td></tr>
+    <tr><td>Angebot sinkt (S nach links)</td><td>steigt ↑</td><td>sinkt ↓</td></tr>
+    <tr><td>Nachfrage steigt (D nach rechts)</td><td>steigt ↑</td><td>steigt ↑</td></tr>
+    <tr><td>Nachfrage sinkt (D nach links)</td><td>sinkt ↓</td><td>sinkt ↓</td></tr>
+  </table>
+  </div>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">05</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Das <strong>Angebot steigt</strong> (Kurve nach rechts), die Nachfrage bleibt gleich. Folge?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span>Gleichgewichtspreis <b>sinkt</b>, Gleichgewichtsmenge <b>steigt</b>.</li>
+        <li class="opt"><span class="tick"></span>Gleichgewichtspreis steigt, Menge sinkt.</li>
+        <li class="opt"><span class="tick"></span>Preis und Menge steigen beide.</li>
+        <li class="opt"><span class="tick"></span>Preis und Menge bleiben unverändert.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Mehr Angebot → beim alten Preis Angebotsüberhang → der Preis fällt, gleichzeitig wird mehr Menge
+        gehandelt. <b>Preis ↓, Menge ↑.</b></p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">06</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Durch Zuwanderung <strong>steigt die Nachfrage</strong> nach Brot. Was geschieht?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Preis sinkt, Menge sinkt.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Preis <b>steigt</b>, Menge <b>steigt</b>.</li>
+        <li class="opt"><span class="tick"></span>Preis steigt, Menge sinkt.</li>
+        <li class="opt"><span class="tick"></span>Nur der Preis bleibt gleich.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Mehr Nachfrager → Nachfragekurve nach rechts → beim alten Preis Nachfrageüberhang → Preis steigt und
+        die gehandelte Menge steigt. <b>Preis ↑, Menge ↑.</b></p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">07</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Die <strong>Nachfrage sinkt</strong> (Kurve nach links), das Angebot bleibt gleich. Folge?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>Preis steigt, Menge steigt.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Preis <b>sinkt</b>, Menge <b>sinkt</b>.</li>
+        <li class="opt"><span class="tick"></span>Preis sinkt, Menge steigt.</li>
+        <li class="opt"><span class="tick"></span>Preis bleibt gleich, nur die Menge sinkt.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Weniger Nachfrage → beim alten Preis Angebotsüberhang → Preis fällt, und es wird weniger abgesetzt.
+        <b>Preis ↓, Menge ↓.</b></p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">08</span><span class="q-type">Zuordnung</span><span class="q-pts">manuell</span></div>
+    <div class="q-body">
+      <p class="q-text">Ordnen Sie jeder Verschiebung die Folge für <b>Preis</b> und <b>Menge</b> zu:</p>
+      <ul>
+        <li>(1) Angebot nach links (weniger Anbieter)</li>
+        <li>(2) Angebot nach rechts (mehr Anbieter)</li>
+        <li>(3) Nachfrage nach rechts (mehr Nachfrager)</li>
+        <li>(4) Nachfrage nach links (Ersatzgut)</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
+      <p>(1) → Preis ↑, Menge ↓ &nbsp;·&nbsp; (2) → Preis ↓, Menge ↑ &nbsp;·&nbsp;
+        (3) → Preis ↑, Menge ↑ &nbsp;·&nbsp; (4) → Preis ↓, Menge ↓.</p>
+      <p><b>Eselsbrücke:</b> Bei der <i>Nachfrage</i> gehen Preis und Menge in dieselbe Richtung, beim
+        <i>Angebot</i> in entgegengesetzte.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">09</span><span class="q-type">Szenario</span><span class="q-pts">manuell</span></div>
+    <div class="q-body">
+      <p class="q-text"><b>WieGame (Gaming-PCs):</b> Immer mehr Billiganbieter aus China überschwemmen den Markt.
+        Erklären Sie die Auswirkung — gern mit Bezug auf eine Skizze.</p>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
+      <p>Durch die vielen neuen Billiganbieter treffen <b>deutlich mehr Anbieter</b> auf dem Markt zusammen →
+        das Gesamtangebot steigt → die <b>Angebotskurve verschiebt sich nach rechts</b>. Die Nachfrage bleibt
+        zunächst gleich.</p>
+      <p>Beim bisherigen Preis entsteht ein <b>Angebotsüberhang</b>. Es bildet sich ein neues Gleichgewicht:
+        Der <b>Gleichgewichtspreis sinkt</b>, die <b>Gleichgewichtsmenge steigt</b>.</p>
+      <p><b>Kurz:</b> Angebotskurve nach rechts → Preis ↓, Menge ↑.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">10</span><span class="q-type">Freitext</span><span class="q-pts">manuell</span></div>
+    <div class="q-body">
+      <p class="q-text">Empfehlen Sie Ludwig (WieGame) eine Maßnahme gegen den Preisdruck der Billiganbieter.
+        Begründen Sie mit den Annahmen des vollkommenen Marktes.</p>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
+      <p>Ludwig sollte <b>nicht in den reinen Preiskampf</b> einsteigen (den verliert der kleinere Anbieter),
+        sondern sich vom homogenen Billigangebot abheben und gezielt <b>Präferenzen schaffen</b> — also die
+        Bedingungen des vollkommenen Marktes bewusst durchbrechen:</p>
+      <ul>
+        <li><b>Qualitäts-/Produktdifferenzierung:</b> höherwertige Komponenten, leistungsstärkere PCs.</li>
+        <li><b>Marke &amp; Image</b> aufbauen (persönliche Präferenz).</li>
+        <li><b>Zusatzleistungen/Service:</b> Beratung, individuelle Konfiguration, längere Garantie,
+          schnelle Lieferung, regionaler Bezug.</li>
+      </ul>
+      <p>Dadurch ist das Produkt nicht mehr direkt vergleichbar; Kunden zahlen einen höheren Preis und WieGame
+        entgeht dem reinen Preisdruck.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">11</span><span class="q-type">Szenario</span><span class="q-pts">manuell</span></div>
+    <div class="q-body">
+      <p class="q-text">Eine neue, günstige <b>Spielekonsole von Hauwai</b> (PC-Basis) kommt auf den Markt. Leiten Sie
+        begründet eine Preiserwartung für Gaming-PCs ab.</p>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
+      <p>Die Konsole ist ein <b>Substitutionsgut (Ersatzgut)</b> für den Gaming-PC. Ein Teil der Kunden weicht
+        auf die günstigere Konsole aus → die <b>Nachfrage nach Gaming-PCs sinkt</b> → die <b>Nachfragekurve
+        verschiebt sich nach links</b>, das Angebot bleibt unverändert.</p>
+      <p>Beim bisherigen Preis entsteht ein Angebotsüberhang → der <b>Preis für Gaming-PCs sinkt</b> (auch die
+        abgesetzte Menge sinkt). <b>Erwartung: Der Preis wird sinken.</b></p>
+    </div>
+  </article>
+
+  <!-- ================= ABSCHNITT C ================= -->
+  <div class="sec-head"><span class="ix">C</span><h2>Staatliche Eingriffe: Mindest- &amp; Höchstpreis</h2></div>
+  <p class="sec-sub">Schreibt der Staat einen Preis vor, kann der Markt das Gleichgewicht nicht erreichen — es
+    bleiben dauerhafte Überhänge.</p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 480 300" role="img" aria-label="Gesetzlicher Mindestpreis oberhalb des Gleichgewichts erzeugt einen dauerhaften Angebotsüberhang">
+      <line x1="60" y1="20" x2="60" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <line x1="60" y1="255" x2="455" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <polygon points="60,14 56,24 64,24" fill="#16242E"/>
+      <polygon points="461,255 451,251 451,259" fill="#16242E"/>
+      <text class="svg-label" x="30" y="30">Preis</text>
+      <text class="svg-label" x="410" y="275">Menge</text>
+      <line x1="70" y1="70" x2="430" y2="230" stroke="#15786E" stroke-width="2.4"/>
+      <line x1="70" y1="250" x2="430" y2="70" stroke="#DD5430" stroke-width="2.4"/>
+      <circle cx="261" cy="155" r="4.5" fill="#16242E"/>
+      <line x1="60" y1="110" x2="430" y2="110" stroke="#16242E" stroke-width="1.6" stroke-dasharray="6 3"/>
+      <text class="svg-label-sm" x="335" y="104">Mindestpreis</text>
+      <line x1="160" y1="110" x2="350" y2="110" stroke="#B23E1F" stroke-width="5" opacity="0.5"/>
+      <text class="svg-label-sm" x="180" y="128" fill="#B23E1F">Angebotsüberhang</text>
+    </svg>
+    <figcaption>Mindestpreis über dem Gleichgewicht → Angebot &gt; Nachfrage = dauerhafter Angebotsüberhang.</figcaption>
+  </figure>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 480 300" role="img" aria-label="Gesetzlicher Höchstpreis unterhalb des Gleichgewichts erzeugt einen dauerhaften Nachfrageüberhang">
+      <line x1="60" y1="20" x2="60" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <line x1="60" y1="255" x2="455" y2="255" stroke="#16242E" stroke-width="1.5"/>
+      <polygon points="60,14 56,24 64,24" fill="#16242E"/>
+      <polygon points="461,255 451,251 451,259" fill="#16242E"/>
+      <text class="svg-label" x="30" y="30">Preis</text>
+      <text class="svg-label" x="410" y="275">Menge</text>
+      <line x1="70" y1="70" x2="430" y2="230" stroke="#15786E" stroke-width="2.4"/>
+      <line x1="70" y1="250" x2="430" y2="70" stroke="#DD5430" stroke-width="2.4"/>
+      <circle cx="261" cy="155" r="4.5" fill="#16242E"/>
+      <line x1="60" y1="200" x2="430" y2="200" stroke="#16242E" stroke-width="1.6" stroke-dasharray="6 3"/>
+      <text class="svg-label-sm" x="345" y="194">Höchstpreis</text>
+      <line x1="170" y1="200" x2="362" y2="200" stroke="#0d5a52" stroke-width="5" opacity="0.5"/>
+      <text class="svg-label-sm" x="185" y="218" fill="#0d5a52">Nachfrageüberhang</text>
+    </svg>
+    <figcaption>Höchstpreis unter dem Gleichgewicht → Nachfrage &gt; Angebot = dauerhafter Nachfrageüberhang.</figcaption>
+  </figure>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">12</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Der Staat setzt einen <strong>Mindestpreis oberhalb</strong> des Gleichgewichtspreises fest. Folge?</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt" data-correct="true"><span class="tick"></span>Dauerhafter <code>Angebotsüberhang</code> — es wird mehr angeboten als nachgefragt.</li>
+        <li class="opt"><span class="tick"></span>Dauerhafter Nachfrageüberhang.</li>
+        <li class="opt"><span class="tick"></span>Der Markt erreicht sofort ein neues Gleichgewicht.</li>
+        <li class="opt"><span class="tick"></span>Angebot und Nachfrage verschwinden.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Ein Mindestpreis über dem Gleichgewicht (z. B. Mindestlohn-Logik) macht das Anbieten attraktiv, die
+        Nachfrage aber gering → bleibender <b>Angebotsüberhang</b>. Der Preis darf nicht sinken.</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">13</span><span class="q-type">Multiple Choice</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Ein gesetzlicher <strong>Höchstpreis unterhalb</strong> des Gleichgewichts führt zu …</p>
+      <ul class="q-options" data-multi="false">
+        <li class="opt"><span class="tick"></span>… einem Angebotsüberhang.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>… einem <code>Nachfrageüberhang</code> — es wird mehr nachgefragt als angeboten.</li>
+        <li class="opt"><span class="tick"></span>… sofortigem Gleichgewicht.</li>
+        <li class="opt"><span class="tick"></span>… steigenden Preisen über das Gleichgewicht hinaus.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Ein Höchstpreis unter dem Gleichgewicht hält den Preis künstlich niedrig → viele wollen kaufen, wenige
+        anbieten → bleibender <b>Nachfrageüberhang</b> (Knappheit/Mangel).</p>
+    </div>
+  </article>
+
+  <article class="q">
+    <div class="q-head"><span class="q-num">14</span><span class="q-type">Multi-Select</span><span class="q-pts">Auto</span></div>
+    <div class="q-body">
+      <p class="q-text">Welche Aussagen zu staatlichen Preisgrenzen sind <strong>richtig</strong>? (Mehrfachauswahl)</p>
+      <ul class="q-options" data-multi="true">
+        <li class="opt" data-correct="true"><span class="tick"></span>Ein wirksamer Mindestpreis liegt <i>über</i> dem Gleichgewichtspreis.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Ein wirksamer Höchstpreis liegt <i>unter</i> dem Gleichgewichtspreis.</li>
+        <li class="opt"><span class="tick"></span>Ein Höchstpreis erzeugt einen Angebotsüberhang.</li>
+        <li class="opt" data-correct="true"><span class="tick"></span>Durch die Preisgrenze kann der Markt das Gleichgewicht nicht erreichen.</li>
+        <li class="opt"><span class="tick"></span>Mindest- und Höchstpreis bewirken stets dasselbe.</li>
+      </ul>
+    </div>
+    <div class="q-foot"><button class="q-check btn">Auswerten</button><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
+    <div class="q-solution" hidden><span class="sol-label">Lösung</span>
+      <p>Richtig: Mindestpreis liegt über, Höchstpreis unter dem Gleichgewicht; beide verhindern das
+        Gleichgewicht. Falsch: ein Höchstpreis erzeugt einen <i>Nachfrage</i>überhang, und die beiden Eingriffe
+        wirken gegensätzlich.</p>
+    </div>
+  </article>
+
+  <nav class="pager">
+    <a href="02-marktgleichgewicht-ermitteln.html"><span>Vorheriges Thema</span><b>← 02 · Marktgleichgewicht ermitteln</b></a>
+    <a class="next" href="lernseite.html"><span>Weiter</span><b>Konzepte wiederholen →</b></a>
+  </nav>
+
+</div></main>
+<footer class="foot"><div class="wrap"><span class="mono">BGWP · Thema 11 — Verschiebung von Angebot &amp; Nachfrage</span> · Kerninhalt</div></footer>
+<script src="assets/quiz.js"></script>
+</body>
+</html>
