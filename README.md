@@ -1,7 +1,6 @@
-# BGWP · Selbsttest — Vollkommener Markt & Preisbildung (Thema 11)
+# Selbsttest — Vollkommener Markt & Preisbildung (Thema 11)
 
-Eigenständige, statische Lern- und Test-Website zum Fach **BGWP** (Betriebswirtschaft und
-Wirtschaftspraxis), Thema 11 **Preisbildung**. Sie deckt drei Bereiche ab:
+Eigenständige, statische Lern- und Test-Website zum Thema 11 **Preisbildung**. Sie deckt drei Bereiche ab:
 
 1. **Der vollkommene Markt** – Markt, Marktformen, Modell-Annahmen, Gesetz von Angebot & Nachfrage
 2. **Marktgleichgewicht ermitteln** – Schnittpunkt, Über­hänge, Tabelle / grafisch / mathematisch
@@ -33,6 +32,4 @@ assets/quiz.js    Interaktion (Auswertung, Lösungen)
 
 ## Hinweis zu Urheberschaft, Quellen & Haftung
 
-Lernhilfe zu **reinem Bildungszweck**, **KI-gestützt** erstellt aus dem Unterrichtsmaterial des
-Workspace (Thema 11) und der zugehörigen Notion-Lerngrundlage. Inhaltliche Richtigkeit ohne Gewähr —
-maßgeblich bleiben Unterricht und offizielle Materialien. Keine Weitergabe als amtliches Prüfungsmaterial.
+Lernhilfe zu **reinem Bildungszweck.** Inhaltliche Richtigkeit ohne Gewähr. Keine Weitergabe als amtliches Prüfungsmaterial.
