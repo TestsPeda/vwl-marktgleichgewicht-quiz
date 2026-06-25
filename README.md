@@ -10,6 +10,8 @@ Dazu eine **Lernseite** mit allen Kernbegriffen und Diagrammen zum Wiederholen.
 
 ## Nutzung
 
+Live-Version: https://testspeda.github.io/vwl-marktgleichgewicht-quiz/
+
 `index.html` im Browser öffnen — keine Installation, kein Build, keine Internetverbindung nötig.
 Funktioniert offline und auf **GitHub Pages**. Multiple-Choice und Multi-Select werden automatisch
 ausgewertet; Rechen-, Zuordnungs-, Freitext- und Szenario-Aufgaben haben eine aufdeckbare Musterlösung.
