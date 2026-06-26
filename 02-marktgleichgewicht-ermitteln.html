@@ -249,22 +249,22 @@
   <article class="q">
     <div class="q-head"><span class="q-num">09</span><span class="q-type">Rechnen</span><span class="q-pts">manuell</span></div>
     <div class="q-body">
-      <p class="q-text">Eismarkt — bestimmen Sie den Gleichgewichtsbereich aus den beiden Tabellen.</p>
+      <p class="q-text">Marktstand für Brötchen — bestimmen Sie den Gleichgewichtsbereich aus den beiden Tabellen.</p>
       <div class="tbl-wrap">
       <table class="ref">
-        <tr><th>Preis je Kugel (€)</th><td>0,50</td><td>0,75</td><td>1,00</td><td>1,25</td><td>1,50</td><td>1,75</td></tr>
-        <tr><th>Nachfrage / Tag</th><td>500</td><td>400</td><td>300</td><td>200</td><td>100</td><td>0</td></tr>
-        <tr><th>Angebot / Tag</th><td>0</td><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td></tr>
+        <tr><th>Preis je Stück (€)</th><td>0,60</td><td>0,80</td><td>1,00</td><td>1,20</td><td>1,40</td><td>1,60</td></tr>
+        <tr><th>Nachfrage / Tag</th><td>600</td><td>480</td><td>360</td><td>240</td><td>120</td><td>0</td></tr>
+        <tr><th>Angebot / Tag</th><td>0</td><td>120</td><td>240</td><td>360</td><td>480</td><td>600</td></tr>
       </table>
       </div>
     </div>
     <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
     <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
       <p>Man sucht den Preis, bei dem Angebot ≈ Nachfrage:</p>
-      <div class="step">Preis 1,00 €:  Nachfrage 300 &gt; Angebot 200  →  Nachfrageüberhang
-Preis 1,25 €:  Nachfrage 200 &lt; Angebot 300  →  Angebotsüberhang</div>
-      <p>Der Gleichgewichtspreis liegt also <b>zwischen 1,00 € und 1,25 €</b>, die Gleichgewichtsmenge bei
-        <b>ca. 250 Kugeln/Tag</b>. (Genau berechnet: 1,125 € / 250 Kugeln — siehe Aufgabe 13.)</p>
+      <div class="step">Preis 1,00 €:  Nachfrage 360 &gt; Angebot 240  →  Nachfrageüberhang
+Preis 1,20 €:  Nachfrage 240 &lt; Angebot 360  →  Angebotsüberhang</div>
+      <p>Der Gleichgewichtspreis liegt also <b>zwischen 1,00 € und 1,20 €</b>, die Gleichgewichtsmenge bei
+        <b>ca. 300 Stück/Tag</b>. (Genau berechnet: 1,10 € / 300 Stück — siehe Aufgabe 13.)</p>
     </div>
   </article>
 
@@ -329,30 +329,30 @@ Preis 1,25 €:  Nachfrage 200 &lt; Angebot 300  →  Angebotsüberhang</div>
   <article class="q">
     <div class="q-head"><span class="q-num">13</span><span class="q-type">Rechnen</span><span class="q-pts">manuell</span></div>
     <div class="q-body">
-      <p class="q-text">Berechnen Sie das Gleichgewicht <strong>mathematisch</strong> (Eismarkt). Gegeben — x = Menge, y = Preis:</p>
+      <p class="q-text">Berechnen Sie das Gleichgewicht <strong>mathematisch</strong> (Marktstand für Brötchen). Gegeben — x = Menge, y = Preis:</p>
       <ul>
-        <li>Nachfrage: bei 500 Kugeln 0,50 €; bei 0 Kugeln 1,75 €</li>
-        <li>Angebot: bei 0 Kugeln 0,50 €; bei 500 Kugeln 1,75 €</li>
+        <li>Nachfrage: bei 600 Stück 0,60 €; bei 0 Stück 1,60 €</li>
+        <li>Angebot: bei 0 Stück 0,60 €; bei 600 Stück 1,60 €</li>
       </ul>
     </div>
     <div class="q-foot"><button class="q-reveal" aria-expanded="false">Lösung anzeigen</button></div>
     <div class="q-solution" hidden><span class="sol-label">Musterlösung</span>
-      <p><b>1. Nachfragegerade</b> — Punkte (500 | 0,50) und (0 | 1,75):</p>
-      <div class="step">m = (0,50 − 1,75) / (500 − 0) = −1,25 / 500 = −0,0025
-t = 1,75   (bei x = 0)
-→  y = −0,0025·x + 1,75</div>
-      <p><b>2. Angebotsgerade</b> — Punkte (0 | 0,50) und (500 | 1,75):</p>
-      <div class="step">m = (1,75 − 0,50) / (500 − 0) = 1,25 / 500 = 0,0025
-t = 0,50   (bei x = 0)
-→  y = 0,0025·x + 0,50</div>
+      <p><b>1. Nachfragegerade</b> — Punkte (600 | 0,60) und (0 | 1,60):</p>
+      <div class="step">m = (0,60 − 1,60) / (600 − 0) = −1,00 / 600 ≈ −0,0016667
+t = 1,60   (bei x = 0)
+→  y = −0,0016667·x + 1,60</div>
+      <p><b>2. Angebotsgerade</b> — Punkte (0 | 0,60) und (600 | 1,60):</p>
+      <div class="step">m = (1,60 − 0,60) / (600 − 0) = 1,00 / 600 ≈ 0,0016667
+t = 0,60   (bei x = 0)
+→  y = 0,0016667·x + 0,60</div>
       <p><b>3. Gleichsetzen</b> (Angebot = Nachfrage):</p>
-      <div class="step">−0,0025·x + 1,75 = 0,0025·x + 0,50
-1,75 − 0,50 = 0,0025·x + 0,0025·x
-1,25 = 0,005·x   →   x = 250</div>
+      <div class="step">−0,0016667·x + 1,60 = 0,0016667·x + 0,60
+1,60 − 0,60 = 0,0016667·x + 0,0016667·x
+1,00 = 0,0033333·x   →   x = 300</div>
       <p><b>4. Preis einsetzen:</b></p>
-      <div class="step">y = 0,0025·250 + 0,50 = 0,625 + 0,50 = 1,125</div>
-      <p><b>Ergebnis:</b> Gleichgewichtsmenge <b>250 Kugeln/Tag</b>, Gleichgewichtspreis <b>1,125 €</b> —
-        passt zum Tabellen-Bereich „zwischen 1,00 € und 1,25 €".</p>
+      <div class="step">y = 0,0016667·300 + 0,60 = 0,50 + 0,60 = 1,10</div>
+      <p><b>Ergebnis:</b> Gleichgewichtsmenge <b>300 Stück/Tag</b>, Gleichgewichtspreis <b>1,10 €</b> —
+        passt zum Tabellen-Bereich „zwischen 1,00 € und 1,20 €".</p>
     </div>
   </article>
 
