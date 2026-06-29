@@ -4,6 +4,21 @@
 (function () {
   "use strict";
 
+  /* ----- Antworten einmalig (pro Seitenaufruf) zufällig mischen -----
+     Die Richtig/Falsch-Information steht in data-correct am <li>, das Mischen
+     der DOM-Reihenfolge erhält sie also. So ist die richtige Antwort nicht
+     mehr immer die erste. */
+  function shuffleOptions(q) {
+    var list = q.querySelector(".q-options");
+    if (!list) return;
+    var opts = Array.prototype.slice.call(list.querySelectorAll(".opt"));
+    for (var i = opts.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = opts[i]; opts[i] = opts[j]; opts[j] = tmp;
+    }
+    opts.forEach(function (o) { list.appendChild(o); });
+  }
+
   /* ----- Multiple-choice handling ----- */
   function initOptions(q) {
     var list = q.querySelector(".q-options");
@@ -120,6 +135,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".q").forEach(function (q) {
+      shuffleOptions(q);
       initOptions(q);
       initReveal(q);
     });
