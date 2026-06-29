@@ -277,6 +277,31 @@ figure.diagram figcaption {
   border: 1px solid var(--line); border-radius: 3px; padding: .04em .35em; font-size: .9em;
 }
 
+/* ---------- learn-card toggles ---------------------------------------- */
+.lc-toggle {
+  margin-top: 8px; border-top: 1px solid var(--line); padding-top: 6px;
+}
+.lc-toggle summary {
+  font-family: var(--font-mono); font-size: .74rem; letter-spacing: .08em;
+  color: var(--accent-2); cursor: pointer; user-select: none;
+  list-style: none; display: flex; align-items: center; gap: 6px;
+}
+.lc-toggle summary::before {
+  content: "▶"; font-size: .6rem; transition: transform .2s;
+}
+.lc-toggle[open] summary::before { transform: rotate(90deg); }
+.lc-toggle summary:hover { color: var(--ink); }
+.lc-toggle > *:not(summary) {
+  font-size: .86rem; color: var(--ink); margin: 6px 0 0;
+}
+.lc-toggle ul, .lc-toggle ol { margin: 4px 0; padding-left: 18px; }
+.lc-toggle li { margin: 3px 0; }
+.lc-toggle p { margin: 4px 0 0; }
+.lc-toggle code {
+  font-family: var(--font-mono); background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: 3px; padding: .03em .35em; font-size: .88em;
+}
+
 /* ---------- reference tables ------------------------------------------ */
 .tbl-wrap { overflow-x: auto; margin: 4px 0 12px; }
 table.ref {
